@@ -10,19 +10,25 @@ public class Loja implements Serializable {
     private String descricao;
     private String categoria;
     private String atendimento;
+    private String abertura;
+    private String fechamento;
     private String contato;
     private String selecao;
+    private String imageURL;
 
     public Loja() {
     }
 
-    public Loja(String nome, String descricao, String categoria, String atendimento, String contato, String selecao) {
+    public Loja(String nome, String descricao, String categoria, String atendimento, String abertura, String fechamento, String contato, String selecao, String imageURL){
         this.nome = nome;
         this.descricao = descricao;
         this.categoria = categoria;
         this.atendimento = atendimento;
+        this.abertura = abertura;
+        this.fechamento = fechamento;
         this.contato = contato;
         this.selecao = selecao;
+        this.imageURL = imageURL;
     }
 
     public String getNome() {
@@ -71,5 +77,29 @@ public class Loja implements Serializable {
 
     public void setSelecao(String selecao) {
         this.selecao = selecao;
+    }
+
+    public String getImageURL(){
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL){
+        this.imageURL = imageURL;
+    }
+
+    public String getAbertura(){
+        return abertura;
+    }
+
+    public void setAbertura(String abertura){
+        this.abertura = abertura;
+    }
+
+    public String getFechamento(){
+        return fechamento;
+    }
+
+    public void setFechamento(String fechamento){
+        this.fechamento = fechamento;
     }
 }

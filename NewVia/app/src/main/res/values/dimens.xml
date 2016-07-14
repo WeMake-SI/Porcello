@@ -2,5 +2,12 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+
+    <dimen name="adapter_text_margin">8dp</dimen>
+    <dimen name="adapter_image_margin">8dp</dimen>
+
+    <dimen name="adapter_titulo_loja">18sp</dimen>
+    <dimen name="adapter_outros">12sp</dimen>
+    <dimen name="list_item_loja_image_width">75dp</dimen>
 </resources>
