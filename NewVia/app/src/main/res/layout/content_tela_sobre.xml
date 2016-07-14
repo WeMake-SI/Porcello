@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viaRed"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_tela_sobre" tools:context="rafael.couto.newvia.TelaSobre">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/ivLogo"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tvVersao"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvVersao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tvAno"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvAno" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tvDesenvolvedor"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvDesenvolvedor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tvDesenvolvedorSec"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvDesenvolvedorSec" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tvDesign"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvDesign" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tvDesignSec"
+                android:id="@+id/tvDesignSec" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:drawablePadding="5dp"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:background="@drawable/emailvia"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btnEmail" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
