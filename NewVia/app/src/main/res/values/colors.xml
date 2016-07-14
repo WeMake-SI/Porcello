@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E12e31</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="viaBlue">#E12E31</color>
+    <color name="viaRed">#3B3F96</color>
+    <color name="black">#ffffff</color>
+    <color name="grey">#bdbdbd</color>
+    <color name="blue">#772196f3</color>
+</resources>
