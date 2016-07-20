@@ -6,59 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class TelaLojas extends AppCompatActivity {
 
-    private Button btn01;
-    private Button btn02;
-    private Button btn03;
-    private Button btn05;
-    private Button btn06;
-    private Button btn07;
-    private Button btn08;
-    private Button btn09;
-    private Button btn10;
-    private Button btn11;
-    private Button btn12;
-    private Button btn13;
-    private Button btn14;
-    private Button btn15;
-    private Button btn16;
-    private Button btn17;
-    private Button btn19;
-    private Button btn20;
-    private Button btn21;
-    private Button btn22;
-    private Button btn23;
-    private Button btn24;
-    private Button btn25;
-    private Button btn26;
-    private Button btn27;
-    private Button btn28;
-    private Button btn29;
-    private Button btn30;
-    private Button btn31;
-    private Button btn32;
-    private Button btn33;
-    private Button btn34;
-    private Button btn35;
-    private Button btn36;
-    private Button btn37;
-    private Button btn38;
-    private Button btn39;
-    private Button btn40;
-    private Button btn41;
-
     private ListView listView;
     private AdapterLoja adapterLoja;
     private ArrayList<Loja> lojas;
-
-    private Loja l;
-    private AdapterView layoutLojas;
 
     @Override
     protected void onStart(){
@@ -76,7 +32,7 @@ public class TelaLojas extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.list_view);
 
-        adapterLoja = new AdapterLoja(getApplicationContext(), getLayoutInflater(), criarArrayList());
+        adapterLoja = new AdapterLoja(getBaseContext(), criarArrayList());
 
         listView.setAdapter(adapterLoja);
 
@@ -122,8 +78,6 @@ public class TelaLojas extends AppCompatActivity {
 
     private ArrayList<Loja> criarArrayList(){
         //TODO: Mudar URL das imagens no ultimo parametro
-        //TODO: Ajustar a categoria dos itens conforme string.xml
-        //TODO: Ajustar alguns horários e revisar string.xml
 
         Loja amo = new Loja(getString(R.string.nomeAmo),
                             getString(R.string.descAmo),
@@ -137,7 +91,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja banana = new Loja(getString(R.string.nomeBanana),
                                getString(R.string.descBanana),
-                               getString(R.string.aces),
+                               getString(R.string.vest),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -147,7 +101,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja beauty = new Loja(getString(R.string.nomeBeauty),
                                getString(R.string.descBeauty),
-                               getString(R.string.aces),
+                               getString(R.string.salao),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -157,7 +111,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja bola = new Loja(getString(R.string.nomeBola),
                              getString(R.string.descBola),
-                             getString(R.string.aces),
+                             getString(R.string.alim),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -167,7 +121,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja boticario = new Loja(getString(R.string.nomeBoticario),
                                   getString(R.string.descBoticario),
-                                  getString(R.string.aces),
+                                  getString(R.string.perf),
                                   getString(R.string.atendimento),
                                   getString(R.string.open_hour),
                                   getString(R.string.close_hour),
@@ -177,7 +131,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja busca = new Loja(getString(R.string.nomeBusca),
                               getString(R.string.descBusca),
-                              getString(R.string.aces),
+                              getString(R.string.vest),
                               getString(R.string.atendimento),
                               getString(R.string.open_hour),
                               getString(R.string.close_hour),
@@ -187,7 +141,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja cafe = new Loja(getString(R.string.nomeCafe),
                              getString(R.string.descCafe),
-                             getString(R.string.aces),
+                             getString(R.string.alim),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -197,7 +151,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja cheias = new Loja(getString(R.string.nomeCheias),
                                getString(R.string.descCheias),
-                               getString(R.string.aces),
+                               getString(R.string.vest),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -207,7 +161,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja chiapas = new Loja(getString(R.string.nomeChiapas),
                                 getString(R.string.descChiapas),
-                                getString(R.string.aces),
+                                getString(R.string.alim),
                                 getString(R.string.atendimento),
                                 getString(R.string.open_hour),
                                 getString(R.string.close_hour),
@@ -217,7 +171,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja china = new Loja(getString(R.string.nomeChina),
                               getString(R.string.descChina),
-                              getString(R.string.aces),
+                              getString(R.string.alim),
                               getString(R.string.atendimento),
                               getString(R.string.open_hour),
                               getString(R.string.close_hour),
@@ -227,7 +181,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja conceito = new Loja(getString(R.string.nomeConceito),
                                  getString(R.string.descConceito),
-                                 getString(R.string.aces),
+                                 getString(R.string.salao),
                                  getString(R.string.atendimento),
                                  getString(R.string.open_hour),
                                  getString(R.string.close_hour),
@@ -237,7 +191,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja confraria = new Loja(getString(R.string.nomeConfraria),
                                   getString(R.string.descConfraria),
-                                  getString(R.string.aces),
+                                  getString(R.string.alim),
                                   getString(R.string.atendimento),
                                   getString(R.string.open_hour),
                                   getString(R.string.close_hour),
@@ -247,7 +201,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja deli = new Loja(getString(R.string.nomeDeli),
                              getString(R.string.descDeli),
-                             getString(R.string.aces),
+                             getString(R.string.alim),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -257,7 +211,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja dequi = new Loja(getString(R.string.nomeDequi),
                               getString(R.string.descDequi),
-                              getString(R.string.aces),
+                              getString(R.string.esp),
                               getString(R.string.atendimento),
                               getString(R.string.open_hour),
                               getString(R.string.close_hour),
@@ -267,7 +221,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja elaine = new Loja(getString(R.string.nomeElaine),
                                getString(R.string.descElaine),
-                               getString(R.string.aces),
+                               getString(R.string.vest),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -277,7 +231,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja estilo = new Loja(getString(R.string.nomeEstilo),
                                getString(R.string.descEstilo),
-                               getString(R.string.aces),
+                               getString(R.string.vest),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -287,7 +241,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja excel = new Loja(getString(R.string.nomeExcel),
                               getString(R.string.descExcel),
-                              getString(R.string.aces),
+                              getString(R.string.info),
                               getString(R.string.atendimento),
                               getString(R.string.open_hour),
                               getString(R.string.close_hour),
@@ -297,7 +251,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja gabriel = new Loja(getString(R.string.nomeGabriel),
                                 getString(R.string.descGabriel),
-                                getString(R.string.aces),
+                                getString(R.string.ot),
                                 getString(R.string.atendimento),
                                 getString(R.string.open_hour),
                                 getString(R.string.close_hour),
@@ -307,7 +261,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja gallery = new Loja(getString(R.string.nomeGallery),
                                 getString(R.string.descGallery),
-                                getString(R.string.aces),
+                                getString(R.string.tab),
                                 getString(R.string.atendimento),
                                 getString(R.string.open_hour),
                                 getString(R.string.close_hour),
@@ -317,7 +271,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja info = new Loja(getString(R.string.nomeInfo),
                              getString(R.string.descInfo),
-                             getString(R.string.aces),
+                             getString(R.string.info),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -327,7 +281,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja japesca = new Loja(getString(R.string.nomeJapesca),
                                 getString(R.string.descJapesca),
-                                getString(R.string.aces),
+                                getString(R.string.alim),
                                 getString(R.string.atendimento),
                                 getString(R.string.open_hour),
                                 getString(R.string.close_hour),
@@ -337,7 +291,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja joara = new Loja(getString(R.string.nomeJoara),
                               getString(R.string.descJoara),
-                              getString(R.string.aces),
+                              getString(R.string.flor),
                               getString(R.string.atendimento),
                               getString(R.string.open_hour),
                               getString(R.string.close_hour),
@@ -347,7 +301,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja luna = new Loja(getString(R.string.nomeLuna),
                              getString(R.string.descLuna),
-                             getString(R.string.aces),
+                             getString(R.string.sap),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -357,7 +311,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja mapa = new Loja(getString(R.string.nomeMapa),
                              getString(R.string.descMapa),
-                             getString(R.string.aces),
+                             getString(R.string.vest),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -367,7 +321,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja meia = new Loja(getString(R.string.nomeMeia),
                              getString(R.string.descMeia),
-                             getString(R.string.aces),
+                             getString(R.string.vest),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -377,7 +331,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja olitse = new Loja(getString(R.string.nomeOlitse),
                                getString(R.string.descOlitse),
-                               getString(R.string.aces),
+                               getString(R.string.vest),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -387,7 +341,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja pastel = new Loja(getString(R.string.nomePastel),
                                getString(R.string.descPastel),
-                               getString(R.string.aces),
+                               getString(R.string.alim),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -397,7 +351,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja pizzolotto = new Loja(getString(R.string.nomePizzolotto),
                                    getString(R.string.descPizzolotto),
-                                   getString(R.string.aces),
+                                   getString(R.string.ot),
                                    getString(R.string.atendimento),
                                    getString(R.string.open_hour),
                                    getString(R.string.close_hour),
@@ -407,7 +361,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja planeta = new Loja(getString(R.string.nomePlaneta),
                                 getString(R.string.descPlaneta),
-                                getString(R.string.aces),
+                                getString(R.string.esp),
                                 getString(R.string.atendimento),
                                 getString(R.string.open_hour),
                                 getString(R.string.close_hour),
@@ -417,7 +371,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja ramlig = new Loja(getString(R.string.nomeRamlig),
                                getString(R.string.descRamlig),
-                               getString(R.string.aces),
+                               getString(R.string.ot),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -427,7 +381,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja rede = new Loja(getString(R.string.nomeRede),
                              getString(R.string.descRede),
-                             getString(R.string.aces),
+                             getString(R.string.tel),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -437,7 +391,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja redeprint = new Loja(getString(R.string.nomeRedeprint),
                                   getString(R.string.descRedeprint),
-                                  getString(R.string.aces),
+                                  getString(R.string.graf),
                                   getString(R.string.atendimento),
                                   getString(R.string.open_hour),
                                   getString(R.string.close_hour),
@@ -447,7 +401,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja rosa = new Loja(getString(R.string.nomeRosa),
                              getString(R.string.descRosa),
-                             getString(R.string.aces),
+                             getString(R.string.mani),
                              getString(R.string.atendimento),
                              getString(R.string.open_hour),
                              getString(R.string.close_hour),
@@ -467,7 +421,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja studio = new Loja(getString(R.string.nomeStudio),
                                getString(R.string.descStudio),
-                               getString(R.string.aces),
+                               getString(R.string.sap),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),
@@ -487,7 +441,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja talisma = new Loja(getString(R.string.nomeTalisma),
                                 getString(R.string.descTalisma),
-                                getString(R.string.aces),
+                                getString(R.string.livr),
                                 getString(R.string.atendimento),
                                 getString(R.string.open_hour),
                                 getString(R.string.close_hour),
@@ -497,7 +451,7 @@ public class TelaLojas extends AppCompatActivity {
 
         Loja titton = new Loja(getString(R.string.nomeTitton),
                                getString(R.string.descTitton),
-                               getString(R.string.aces),
+                               getString(R.string.vest),
                                getString(R.string.atendimento),
                                getString(R.string.open_hour),
                                getString(R.string.close_hour),

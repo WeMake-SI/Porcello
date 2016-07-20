@@ -183,6 +183,7 @@
     <string name="btnMapa">Como chegar?</string>
     <string name="btnSite">Website</string>
     <string name="inicio">Início</string>
+
     <string name="aces">Acessórios</string>
     <string name="alim">Alimentício</string>
     <string name="esp">Artigos Esportivos</string>
@@ -199,6 +200,7 @@
     <string name="tab">Tabacaria</string>
     <string name="tel">Telefonia</string>
     <string name="vest">Vestuário</string>
+
     <string name="sair">Sair</string>
     <string name="title_activity_tela_site">Website Via Porcello</string>
     <string name="title_activity_tela_mapa">Mapa</string>

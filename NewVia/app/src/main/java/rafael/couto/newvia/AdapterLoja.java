@@ -12,18 +12,14 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-/**
- * Created by Evandro on 2016-07-15.
- */
 public class AdapterLoja extends BaseAdapter
 {
+    ViewHolder holder;
     private Context context;
-    private LayoutInflater inflater;
     private ArrayList<Loja> lojas;
 
-    public AdapterLoja(Context context, LayoutInflater inflater, ArrayList<Loja> lojas){
+    public AdapterLoja(Context context, ArrayList<Loja> lojas){
         this.context = context;
-        this.inflater = inflater;
         this.lojas = lojas;
     }
 
@@ -44,21 +40,41 @@ public class AdapterLoja extends BaseAdapter
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
-        convertView = inflater.inflate(R.layout.list_item_loja, null);
+        if(convertView == null)
+        {
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_item_loja, parent, false);
 
-        ImageView storeImage = (ImageView) convertView.findViewById(R.id.list_item_loja_image);
-        TextView storeName = (TextView) convertView.findViewById(R.id.list_item_loja_name);
-        TextView storeOpenHour = (TextView) convertView.findViewById(R.id.list_item_loja_open_hour);
-        TextView storeCloseHour = (TextView) convertView.findViewById(R.id.list_item_loja_close_hour);
+            holder = new ViewHolder();
+
+            holder.storeImage = (ImageView) convertView.findViewById(R.id.list_item_loja_image);
+            holder.storeName = (TextView) convertView.findViewById(R.id.list_item_loja_name);
+            holder.storeOpenHour = (TextView) convertView.findViewById(R.id.list_item_loja_open_hour);
+            holder.storeCloseHour = (TextView) convertView.findViewById(R.id.list_item_loja_close_hour);
+
+            convertView.setTag(holder);
+        }
+        else
+        {
+            holder = (ViewHolder) convertView.getTag();
+        }
 
         Loja loja = lojas.get(position);
 
         //TODO: Atualizar url das imagens
-        Picasso.with(context).load("http://imgur.com/" + loja.getImageURL()).error(R.drawable.error).placeholder(R.drawable.load).into(storeImage);
-        storeName.setText(loja.getNome());
-        storeOpenHour.setText(loja.getAbertura());
-        storeCloseHour.setText(loja.getFechamento());
+        Picasso.with(context).load("http://imgur.com/" + loja.getImageURL()).error(R.drawable.error).placeholder(R.drawable.load).into(holder.storeImage);
+
+        holder.storeName.setText(loja.getNome());
+        holder.storeOpenHour.setText(loja.getAbertura());
+        holder.storeCloseHour.setText(loja.getFechamento());
 
         return convertView;
+    }
+
+    static class ViewHolder
+    {
+        ImageView storeImage;
+        TextView storeName;
+        TextView storeOpenHour;
+        TextView storeCloseHour;
     }
 }
