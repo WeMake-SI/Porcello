@@ -3,10 +3,10 @@ package rafael.couto.newvia;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +19,7 @@ public class TelaVisualizacao extends AppCompatActivity {
     private TextView tvDescricaoView;
     private TextView tvCategoriaView;
     private TextView tvAtendimentoView;
-    private Button btnLigar;
+    private FloatingActionButton btnLigar;
 
     private Loja l;
 
@@ -75,7 +75,7 @@ public class TelaVisualizacao extends AppCompatActivity {
         tvDescricaoView = (TextView) findViewById(R.id.tvDescricaoView);
         tvCategoriaView = (TextView) findViewById(R.id.tvCategoriaView);
         tvAtendimentoView = (TextView) findViewById(R.id.tvAtendimentoView);
-        btnLigar = (Button) findViewById(R.id.btnLigar);
+        btnLigar = (FloatingActionButton) findViewById(R.id.btnLigar);
     }
 
     public void catchExtra(){

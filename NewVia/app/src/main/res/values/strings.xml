@@ -13,128 +13,177 @@
     <string name="tvDesignSec">Designer: Pedro Vargas</string>
     <string name="tvContato">contato@wemakesi.com</string>
     <string name="title_activity_tela_visualizacao">Informações</string>
+
+    <string name="atendimento">Atendimento: Segunda a Sexta das 09:00 às 20:00, sábado das 09:00 às 18:00.</string>
+    <string name="open_hour">09:00</string>
+    <string name="close_hour">20:00</string>
+
+    <string name="atendRest">Buffet: Segunda a Sábado das 11:00 às 15:30.</string>
+    <string name="open_hourRest">11:00</string>
+    <string name="close_hourRest">15:30</string>
+
     <string name="nomeBoticario">O Boticário</string>
     <string name="descBoticario">Venda de perfumes masculinos e femininos.</string>
-    <string name="atendimento">Atendimento: Segunda a Sexta das 09:00 às 20:00, sábado das 09:00 às 18:00.</string>
-    <string name="atendRest">Buffet: Segunda a Sábado das 11:00 às 15:30.</string>
     <string name="contBoticario">5134723214</string>
+
     <string name="nomeMeia">Meia &amp; Cia.</string>
     <string name="descMeia">Venda de produtos Lupo.</string>
     <string name="contMeia">5130323030</string>
+
     <string name="nomeBanana">Banana Apples</string>
     <string name="descBanana">Venda de roupas masculinas e femininas.</string>
     <string name="contBanana">5134283926</string>
+
     <string name="nomeRamlig">Ramlig</string>
+    <string name="descRamlig">Serviços de ótica, relojoaria e venda de joias.</string>
     <string name="contRamlig">5134651253</string>
+
     <string name="nomeRede">Rede 10</string>
     <string name="descRede">Venda de roupas e calçados, masculinos e femininos.</string>
     <string name="contRede">5130596862</string>
+
     <string name="nomeLuna">Luna Bella</string>
     <string name="descLuna">Venda de sapatos femininos.</string>
     <string name="contLuna">5134282957</string>
+
     <string name="nomeElaine">Elaine</string>
+    <string name="descElaine">Comércio de roupas femininas.</string>
     <string name="contElaine">5134775965</string>
+
     <string name="nomePizzolotto">Pizzolotto</string>
     <string name="descPizzolotto">Serviços de ótica e relojoaria.</string>
-    <string name="atendPizzolotto">Atendimento: Segunda a Sexta das 09:00 às 19:45, sábado das 09:00 às 17:45.</string>
     <string name="contPizzolotto">5130592455</string>
+
     <string name="nomeCafe">Café Café</string>
     <string name="descCafe">Cafeteria, venda de doces e salgados.</string>
     <string name="contCafe">5134633696</string>
+
     <string name="nomeDeli">Deli Noni</string>
     <string name="descDeli">Doces, salgados e buffet de sorvetes.</string>
     <string name="contDeli">5134767840</string>
+
     <string name="nomePastel">Pastel Center</string>
     <string name="descPastel">Pastéis feitos na hora, venda de almoço e A la Minuta.</string>
     <string name="contPastel">5130318844</string>
+
     <string name="nomeConfraria">Confraria do Lanche</string>
     <string name="descConfraria">Venda de xis, cachorro-quente e batata frita feitos na hora.</string>
     <string name="contConfraria">5134637219</string>
+
     <string name="nomeGallery">Gallery</string>
     <string name="descGallery">Comércio de artigos variados, tabacaria e revistaria.</string>
     <string name="contGallery">5134729620</string>
+
     <string name="nomeDequi">Dequi Side</string>
+    <string name="descDequi">Comércio de roupas femininas.</string>
     <string name="contDequi">5130313076</string>
+
     <string name="nomeExcel">Excel</string>
     <string name="descExcel">Assistência técnica, recarga de cartuchos e acessórios para celulares.</string>
     <string name="contExcel">5130592142</string>
+
     <string name="nomeJoara">Joara</string>
     <string name="descJoara">Floricultura e artesanato com flores.</string>
     <string name="contJoara">5134761600</string>
+
     <string name="nomeConceito">Conceito Z</string>
     <string name="descConceito">Espaço de beleza.</string>
     <string name="contConceito">5130310771</string>
+
     <string name="nomeCheias">Cheias de Charme</string>
-    <string name="descRoupas">Comércio de roupas femininas.</string>
+    <string name="descCheias">Comércio de roupas femininas.</string>
     <string name="contCheias">5130312979</string>
+
     <string name="nomeMapa">Mapa da Malha</string>
     <string name="descMapa">Comércio de malhas da serra gaúcha.</string>
     <string name="contMapa">5134726262</string>
+
     <string name="nomeStein">Stein</string>
     <string name="descStein">Comércio de acessórios femininos.</string>
     <string name="contStein">5130314739</string>
+
     <string name="nomeTalisma">Talismã</string>
     <string name="descTalisma">Comércio de livros.</string>
     <string name="contTalisma">5134655306</string>
+
     <string name="nomeBola">Bola Cheia</string>
     <string name="descBola">Comércio de artigos esportivos da dupla Gre-Nal.</string>
     <string name="contBola">5130518815</string>
+
     <string name="nomeStudio">Studio M</string>
     <string name="descStudio">Calçados, bolsas e acessórios femininos.</string>
     <string name="contStudio">5131503311</string>
+
     <string name="nomeInfo">Info House</string>
     <string name="descInfo">Venda de artigos de informática.</string>
     <string name="contInfo">5134729620</string>
+
     <string name="nomeOlitse">Olitse</string>
     <string name="descOlitse">Comércio de roupas masculinas e moda G.</string>
     <string name="contOlitse">5134760428</string>
+
     <string name="nomeAmo">Amo Bijuterias</string>
     <string name="descAmo">Comércio de acessórios e bijuterias.</string>
     <string name="contAmo">5134669423</string>
+
     <string name="nomeJapesca">Japesca</string>
     <string name="descJapesca">Temakeria e comida japonesa.</string>
     <string name="contJapesca">5130322292</string>
+
     <string name="nomeChina">China City</string>
     <string name="descChina">Restaurante de comida chinesa.</string>
     <string name="contChina">5134661085</string>
+
     <string name="nomeChiapas">Los Chiapas</string>
     <string name="descChiapas">Buffet livre e almoço.</string>
     <string name="contChiapas">5130597079</string>
+
     <string name="nomeBeauty">Z Beauty</string>
     <string name="descBeauty">Centro de beleza.</string>
     <string name="contBeauty">5134631688</string>
+
     <string name="nomeBusca">Busca Pé</string>
     <string name="descBusca">Comércio de roupas infantis.</string>
     <string name="contBusca">5134721609</string>
+
     <string name="nomeGabriel">Gabriel</string>
-    <string name="descOtica">Serviços de ótica, relojoaria e venda de joias.</string>
+    <string name="descGabriel">Serviços de ótica, relojoaria e venda de joias.</string>
     <string name="contGabriel">5134776783</string>
+
     <string name="nomeEstilo">Estilo &amp; Cia.</string>
     <string name="descEstilo">Comércio de roupas femininas e moda G.</string>
     <string name="contEstilo">5134654995</string>
+
     <string name="nomeToque">Toque Final</string>
     <string name="descToque">Comércio de acessórios e artigos para presentes.</string>
     <string name="contToque">5134770477</string>
+
     <string name="nomeTitton">Titton</string>
     <string name="descTitton">Comércio de roupas masculinas e femininas.</string>
     <string name="contTitton">5134661115</string>
+
     <string name="nomeSummer">Summer Glasses</string>
     <string name="descSummer">Comércio de óculos de sol.</string>
     <string name="contSummer">5130513395</string>
+
     <string name="nomeRedeprint">Redeprint</string>
     <string name="descRedeprint">Gráfica e impressões em geral.</string>
     <string name="contRedeprint">5130770064</string>
+
     <string name="nomePlaneta">Planeta Surf</string>
     <string name="descPlaneta">Board Shop, Skate Shop e Surf Shop.</string>
     <string name="contPlaneta">5130591140</string>
+
     <string name="nomeRosa">Rosa Moschetta</string>
     <string name="descRosa">Farmácia de manipulação.</string>
     <string name="contRosa">5134658983</string>
+
     <string name="btnLigar">Ligar</string>
     <string name="btnLojas">Todas as lojas</string>
     <string name="btnMapa">Como chegar?</string>
     <string name="btnSite">Website</string>
     <string name="inicio">Início</string>
+
     <string name="aces">Acessórios</string>
     <string name="alim">Alimentício</string>
     <string name="esp">Artigos Esportivos</string>
@@ -151,6 +200,7 @@
     <string name="tab">Tabacaria</string>
     <string name="tel">Telefonia</string>
     <string name="vest">Vestuário</string>
+
     <string name="sair">Sair</string>
     <string name="title_activity_tela_site">Website Via Porcello</string>
     <string name="title_activity_tela_mapa">Mapa</string>
@@ -164,4 +214,10 @@
     <string name="title_activity_tela_lojas">Lojas</string>
     <string name="rota">Rota adquirida</string>
     <string name="erro">Não foi possível traçar a rota. Tente novamente.</string>
+
+    <string name="adapter_titulo_loja">Nome da Loja</string>
+    <string name="adapter_horario_loja_inicio">09:00</string>
+    <string name="adapter_horario_loja_fim">18:00</string>
+    <string name="list_item_loja_image_description">Imagem da loja</string>
+    <string name="title_activity_test">Test</string>
 </resources>
