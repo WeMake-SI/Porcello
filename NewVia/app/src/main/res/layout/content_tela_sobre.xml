@@ -86,17 +86,6 @@
                 android:text="@string/tvDesignSec"
                 android:id="@+id/tvDesignSec" />
 
-            <Button
-                android:layout_gravity="center_horizontal"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:drawablePadding="5dp"
-                android:layout_marginBottom="15dp"
-                android:padding="5dp"
-                android:background="@drawable/emailvia"
-                android:layout_marginTop="15dp"
-                android:id="@+id/btnEmail" />
-
         </LinearLayout>
     </ScrollView>
 

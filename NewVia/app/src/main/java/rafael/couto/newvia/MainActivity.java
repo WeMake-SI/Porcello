@@ -89,148 +89,78 @@ public class MainActivity extends AppCompatActivity {
                                 result.closeDrawer();
                                 break;
                             case 1:
-                                l = new Loja();
-                                l.setSelecao("aces");
                                 Intent itAcessorio = new Intent(MainActivity.this, TelaLojas.class);
-                                itAcessorio.putExtra("loja", l);
+                                itAcessorio.putExtra("filtro", getString(R.string.aces));
                                 startActivity(itAcessorio);
                                 break;
                             case 2:
-                                l = new Loja();
-                                l.setSelecao("alim");
                                 Intent itAlim = new Intent(MainActivity.this, TelaLojas.class);
-                                itAlim.putExtra("loja", l);
+                                itAlim.putExtra("filtro", getString(R.string.alim));
                                 startActivity(itAlim);
                                 break;
                             case 3:
-                                l = new Loja();
-                                l.setNome(getString(R.string.nomeBola));
-                                l.setDescricao(getString(R.string.descBola));
-                                l.setCategoria(getString(R.string.esp));
-                                l.setAtendimento(getString(R.string.atendimento));
-                                l.setContato(getString(R.string.contBola));
-
-                                Intent itEsportes = new Intent(MainActivity.this, TelaVisualizacao.class);
-                                itEsportes.putExtra("loja", l);
+                                Intent itEsportes = new Intent(MainActivity.this, TelaLojas.class);
+                                itEsportes.putExtra("filtro", getString(R.string.esp));
                                 startActivity(itEsportes);
                                 break;
                             case 4:
-                                l = new Loja();
-                                l.setNome(getString(R.string.nomeJoara));
-                                l.setDescricao(getString(R.string.descJoara));
-                                l.setCategoria(getString(R.string.flor));
-                                l.setAtendimento(getString(R.string.atendimento));
-                                l.setContato(getString(R.string.contJoara));
-
-                                Intent itFloricultura = new Intent(MainActivity.this, TelaVisualizacao.class);
-                                itFloricultura.putExtra("loja", l);
+                                Intent itFloricultura = new Intent(MainActivity.this, TelaLojas.class);
+                                itFloricultura.putExtra("filtro", getString(R.string.flor));
                                 startActivity(itFloricultura);
                                 break;
                             case 5:
-                                l = new Loja();
-                                l.setNome(getString(R.string.nomeRedeprint));
-                                l.setDescricao(getString(R.string.descRedeprint));
-                                l.setCategoria(getString(R.string.graf));
-                                l.setAtendimento(getString(R.string.atendimento));
-                                l.setContato(getString(R.string.contRedeprint));
-
-                                Intent itGrafica = new Intent(MainActivity.this, TelaVisualizacao.class);
-                                itGrafica.putExtra("loja", l);
+                                Intent itGrafica = new Intent(MainActivity.this, TelaLojas.class);
+                                itGrafica.putExtra("filtro", getString(R.string.graf));
                                 startActivity(itGrafica);
                                 break;
                             case 6:
-                                l = new Loja();
-                                l.setSelecao("inf");
                                 Intent itInf = new Intent(MainActivity.this, TelaLojas.class);
-                                itInf.putExtra("loja", l);
+                                itInf.putExtra("filtro", getString(R.string.info));
                                 startActivity(itInf);
                                 break;
                             case 8:
-                                l = new Loja();
-                                l.setNome(getString(R.string.nomeTalisma));
-                                l.setDescricao(getString(R.string.descTalisma));
-                                l.setCategoria(getString(R.string.livr));
-                                l.setAtendimento(getString(R.string.atendimento));
-                                l.setContato(getString(R.string.contTalisma));
-
-                                Intent itLivraria = new Intent(MainActivity.this, TelaVisualizacao.class);
-                                itLivraria.putExtra("loja", l);
+                                Intent itLivraria = new Intent(MainActivity.this, TelaLojas.class);
+                                itLivraria.putExtra("filtro", getString(R.string.livr));
                                 startActivity(itLivraria);
                                 break;
                             case 9:
-                                l = new Loja();
-                                l.setNome(getString(R.string.nomeRosa));
-                                l.setDescricao(getString(R.string.descRosa));
-                                l.setCategoria(getString(R.string.mani));
-                                l.setAtendimento(getString(R.string.atendimento));
-                                l.setContato(getString(R.string.contRosa));
-
-                                Intent itFarmacia = new Intent(MainActivity.this, TelaVisualizacao.class);
-                                itFarmacia.putExtra("loja", l);
+                                Intent itFarmacia = new Intent(MainActivity.this, TelaLojas.class);
+                                itFarmacia.putExtra("filtro", getString(R.string.mani));
                                 startActivity(itFarmacia);
                                 break;
                             case 10:
-                                l = new Loja();
-                                l.setSelecao("otica");
                                 Intent itOtica = new Intent(MainActivity.this, TelaLojas.class);
-                                itOtica.putExtra("loja", l);
+                                itOtica.putExtra("filtro", getString(R.string.ot));
                                 startActivity(itOtica);
                                 break;
                             case 11:
-                                l = new Loja();
-                                l.setNome(getString(R.string.nomeBoticario));
-                                l.setDescricao(getString(R.string.descBoticario));
-                                l.setCategoria(getString(R.string.perf));
-                                l.setAtendimento(getString(R.string.atendimento));
-                                l.setContato(getString(R.string.contBoticario));
-
-                                Intent itPerfume = new Intent(MainActivity.this, TelaVisualizacao.class);
-                                itPerfume.putExtra("loja", l);
+                                Intent itPerfume = new Intent(MainActivity.this, TelaLojas.class);
+                                itPerfume.putExtra("filtro", getString(R.string.perf));
                                 startActivity(itPerfume);
                                 break;
                             case 12:
-                                l = new Loja();
-                                l.setSelecao("salao");
                                 Intent itSalao = new Intent(MainActivity.this, TelaLojas.class);
-                                itSalao.putExtra("loja", l);
+                                itSalao.putExtra("filtro", getString(R.string.salao));
                                 startActivity(itSalao);
                                 break;
                             case 13:
-                                l = new Loja();
-                                l.setSelecao("sap");
                                 Intent itSap = new Intent(MainActivity.this, TelaLojas.class);
-                                itSap.putExtra("loja", l);
+                                itSap.putExtra("filtro", getString(R.string.sap));
                                 startActivity(itSap);
                                 break;
                             case 14:
-                                l = new Loja();
-                                l.setNome(getString(R.string.nomeGallery));
-                                l.setDescricao(getString(R.string.descGallery));
-                                l.setCategoria(getString(R.string.tab));
-                                l.setAtendimento(getString(R.string.atendimento));
-                                l.setContato(getString(R.string.contGallery));
-
-                                Intent itTabacaria = new Intent(MainActivity.this, TelaVisualizacao.class);
-                                itTabacaria.putExtra("loja", l);
+                                Intent itTabacaria = new Intent(MainActivity.this, TelaLojas.class);
+                                itTabacaria.putExtra("filtro", getString(R.string.tab));
                                 startActivity(itTabacaria);
                                 break;
                             case 15:
-                                l = new Loja();
-                                l.setNome(getString(R.string.nomeExcel));
-                                l.setDescricao(getString(R.string.descExcel));
-                                l.setCategoria(getString(R.string.info));
-                                l.setAtendimento(getString(R.string.atendimento));
-                                l.setContato(getString(R.string.contExcel));
-
-                                Intent itExcel = new Intent(MainActivity.this, TelaVisualizacao.class);
-                                itExcel.putExtra("loja", l);
+                                Intent itExcel = new Intent(MainActivity.this, TelaLojas.class);
+                                itExcel.putExtra("filtro", getString(R.string.info));
                                 startActivity(itExcel);
                                 break;
                             case 16:
-                                l = new Loja();
-                                l.setSelecao("vest");
                                 Intent itVest = new Intent(MainActivity.this, TelaLojas.class);
-                                itVest.putExtra("loja", l);
+                                itVest.putExtra("filtro", getString(R.string.vest));
                                 startActivity(itVest);
                                 break;
                             case 17:

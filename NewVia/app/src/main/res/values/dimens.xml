@@ -10,4 +10,5 @@
     <dimen name="adapter_titulo_loja">18sp</dimen>
     <dimen name="adapter_outros">12sp</dimen>
     <dimen name="list_item_loja_image_width">75dp</dimen>
+    <dimen name="activity_padding">8dp</dimen>
 </resources>

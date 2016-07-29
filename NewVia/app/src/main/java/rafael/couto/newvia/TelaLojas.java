@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -15,6 +16,7 @@ public class TelaLojas extends AppCompatActivity {
     private ListView listView;
     private AdapterLoja adapterLoja;
     private ArrayList<Loja> lojas;
+    private String filtro;
 
     @Override
     protected void onStart(){
@@ -28,6 +30,14 @@ public class TelaLojas extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+//        AQUI ESSE AQUI OOOHH
+        if(savedInstanceState != null)
+        {
+            filtro = savedInstanceState.getString("FILTRO");
+        }
+
+        Log.i("FILTRO", "Passou " + filtro);
 
 
         listView = (ListView) findViewById(R.id.list_view);
@@ -46,6 +56,8 @@ public class TelaLojas extends AppCompatActivity {
                 intent.putExtra("loja", loja);
 
                 startActivity(intent);
+
+                Log.i("FILTRO", "BLA BLA" + filtro);
             }
         });
     }
@@ -510,6 +522,19 @@ public class TelaLojas extends AppCompatActivity {
         lojas.add(talisma);
         lojas.add(titton);
         lojas.add(toque);
+
+        filtro = getIntent().getStringExtra("filtro");
+
+        if(filtro != null)
+        {
+            ArrayList<Loja> filtroLojas = new ArrayList<>();
+
+            for(int i = 0; i < lojas.size(); i++ )
+            {
+                if(lojas.get(i).getCategoria().equalsIgnoreCase(filtro)) filtroLojas.add(lojas.get(i));
+            }
+            return filtroLojas;
+        }
 
         return lojas;
     }
